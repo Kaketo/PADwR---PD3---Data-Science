@@ -2,7 +2,7 @@
 Projekt w języku R mający na celu analizę danych z serwisu Stackoverflow.
 
 # Zadania do zrobienia:
-### Opis tabel w każdym forum Stackoverflow
+### 1. Opis tabel w każdym forum Stackoverflow
 **Marcin:**
   * Badges
   * Comments
@@ -15,7 +15,7 @@ Projekt w języku R mający na celu analizę danych z serwisu Stackoverflow.
 * Useres
 * Votes
 
-### Sprawdzenie pomysłów na analizę
+### 2. Sprawdzenie pomysłów na analizę
 **Marcin**
   * reputacja w zaleznosci od miejsca zamieszkania (regresja)
   * ego uzytkownika na podstawie opisu
