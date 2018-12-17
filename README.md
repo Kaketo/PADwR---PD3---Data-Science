@@ -14,7 +14,7 @@ Projekt w języku R mający na celu analizę danych z serwisu Stackoverflow.
 |Nazwa kolumny | Opis |
 |--------------|------|
 | Id | Id posta |
-| PostTypeId | Id typu posta. Rozróżniamy następujące: <ul><li>1 = Question</li><li>2 = Answer</li><li>3 = Wiki</li><li>4 = TagWikiExcerpt</li><li>5 = TagWiki</li><li>6 = ModeratorNomination</li><li>7 = WikiPlaceholder</li><li>8 PrivilegeWiki</li></ul> |
+| PostTypeId | Id typu posta. Rozróżniamy następujące:  |
 | AcceptedAnswerId | Id zaakceptowanej odpowiedzi (z zielonym ptaszkiem). Pole obecne tylko jeżeli PostTypeId = 1. |
 | ParentId | Id pytania do którego została napisana odpowiedź. Pole obecne tylko jeżeli PostTypeId = 2. |
 | CreationDate | Data napisania posta. |
