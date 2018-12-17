@@ -11,6 +11,7 @@ Projekt w języku R mający na celu analizę danych z serwisu Stackoverflow.
 
 **Tomek**
 * Posts
+
 Tabela zawierająca najważniejszą cześć forum - treści postów.
 
 | Nazwa kolumny | Opis |
@@ -32,7 +33,9 @@ Tabela zawierająca najważniejszą cześć forum - treści postów.
 | AnswerCount | Ilość odpowiedzi do posta/odpowiedzi, czyli takich z PostTypeId = 2. Nie chodzi tutaj o komentarze. Pole obecne tylko dla PostTypeId = 1 |
 | CommentCount | Ilość komentarzy do posta. |
 | FavoriteCount | Ile użytkowników dodało post do ulubionych. Do ulubionych można dodawać tylko posty, które są PostTypeId = 1 |
+
 * Tags
+
 Tabela zawierająca informacje o tagach, które potem pomagają wyszukiwać posty przez innych użytkowników.
 
 | Nazwa kolumny | Opis |
@@ -42,7 +45,9 @@ Tabela zawierająca informacje o tagach, które potem pomagają wyszukiwać post
 | Count | Ilość użyć danego taga we wszystkich postach |
 | ExcerptPostId | Nie za bardzo rozumiem co to jest, ale raczej do niczego się nie przyda. |
 | WikiPostId | Nie za bardzo rozumiem co to jest, ale raczej do niczego się nie przyda. |
+
 * Users
+
 Tabela zawierająca bazę wszystkich użytkowników forum.
 
 | Nazwa kolumny  | Opis
@@ -59,13 +64,14 @@ Tabela zawierająca bazę wszystkich użytkowników forum.
 | DownVotes      | DownVote przesuwa treść "w dół" strony, więc będzie ją widzieć mniej osób.<br>Zasady:<ul><li>Downvotes usuwa 2 reputacje od właściciela postu.</li><li>Downvotes na odpowiedzi usuwają 1 reputację od ciebie</li><li>Downvotes na pytania są bezpłatne</li><li>?Możesz głosować 30 razy w ciągu UTC.</li></ul>|
 
 * Votes
+
 Tabela zawierająca informacje o wszystkich głosach jakie użytkownicy oddali na posty.
 
 | Nazwa kolumny | Opis |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id | Id głosu na dany post. |
 | PostId | Id posta na który ktoś zagłosował. |
-| VoteTypeId | Typ głosu. Rozróżniamy następujące: <ul><li>1 = AcceptedByOriginator<li></li>2 = UpVote<li></li>3 = DownVote<li></li>4 = Offensive<li></li>5 = Favorite (UserId will also be populated)<li></li>6 = Close<li></li>7 = Reopen<li></li>8 = BountyStart (UserId and BountyAmount will also be populated)<li></li>9 = BountyClose (BountyAmount will also be populated)<li></li>10 = Deletion<li></li>11 = Undeletion<li></li>12 = Spam<li></li>15 = ModeratorReview<li></li>16 = ApproveEditSuggestion</li></ul>|
+| VoteTypeId | Typ głosu. Rozróżniamy następujące: <ul><li>1 = AcceptedByOriginator</li>2 = UpVote<li></li>3 = DownVote<li></li>4 = Offensive<li></li>5 = Favorite (UserId will also be populated)<li></li>6 = Close<li></li>7 = Reopen<li></li>8 = BountyStart (UserId and BountyAmount will also be populated)<li></li>9 = BountyClose (BountyAmount will also be populated)<li></li>10 = Deletion<li></li>11 = Undeletion<li></li>12 = Spam<li></li>15 = ModeratorReview<li></li>16 = ApproveEditSuggestion</li></ul>|
 | UserId | Kolumna obecna tylko jeżeli VoteTypeId = 5 albo 8. Przyjmuje wartość -1, jeżeli użytkownik został usunięty. |
 | CreationDate | Data głosu. Podana tylko data - godzina została usunięta aby chronić tożsamość uzytkownika. |
 | BountyAmount | Kolumna obecna tylko jeżeli VoteTypeId = 8 albo 9. Nie za bardzo rozumiem o co chodzi z tą kolumną, ale również nie wydaje mi się, żeby się do czegokolwiek przydała. |
