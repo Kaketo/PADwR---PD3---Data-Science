@@ -65,13 +65,13 @@ Tabela zawierająca bazę wszystkich użytkowników forum.
 
 * Votes
 
-Tabela zawierająca informacje o wszystkich głosach jakie użytkownicy oddali na posty.
+Tabela zawierająca informacje o wszystkich głosach i interakcjach jakie użytkownicy zrobili z postami.
 
 | Nazwa kolumny | Opis |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id | Id głosu na dany post. |
 | PostId | Id posta na który ktoś zagłosował. |
-| VoteTypeId | Typ głosu. Rozróżniamy następujące: <ul><li>1 = AcceptedByOriginator</li>2 = UpVote<li></li>3 = DownVote<li></li>4 = Offensive<li></li>5 = Favorite (UserId will also be populated)<li></li>6 = Close<li></li>7 = Reopen<li></li>8 = BountyStart (UserId and BountyAmount will also be populated)<li></li>9 = BountyClose (BountyAmount will also be populated)<li></li>10 = Deletion<li></li>11 = Undeletion<li></li>12 = Spam<li></li>15 = ModeratorReview<li></li>16 = ApproveEditSuggestion</li></ul>|
+| VoteTypeId | Typ głosu. Rozróżniamy następujące: <ul><li>1 = AcceptedByOriginator</li><li>2 = UpVote</li>3 = DownVote</li><li>4 = Offensive</li><li>5 = Favorite (UserId will also be populated)</li><li>6 = Close</li><li>7 = Reopen</li><li>8 = BountyStart (UserId and BountyAmount will also be populated)</li><li>9 = BountyClose (BountyAmount will also be populated)</li><li>10 = Deletion</li><li>11 = Undeletion</li><li>12 = Spam</li><li>15 = ModeratorReview</li><li>16 = ApproveEditSuggestion</li></ul>|
 | UserId | Kolumna obecna tylko jeżeli VoteTypeId = 5 albo 8. Przyjmuje wartość -1, jeżeli użytkownik został usunięty. |
 | CreationDate | Data głosu. Podana tylko data - godzina została usunięta aby chronić tożsamość uzytkownika. |
 | BountyAmount | Kolumna obecna tylko jeżeli VoteTypeId = 8 albo 9. Nie za bardzo rozumiem o co chodzi z tą kolumną, ale również nie wydaje mi się, żeby się do czegokolwiek przydała. |
