@@ -11,6 +11,7 @@ Projekt w języku R mający na celu analizę danych z serwisu Stackoverflow.
 
 **Tomek**
 * Posts
+
 | Nazwa kolumny | Opis |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id | Id posta |
