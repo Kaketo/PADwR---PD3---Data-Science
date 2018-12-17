@@ -11,6 +11,25 @@ Projekt w języku R mający na celu analizę danych z serwisu Stackoverflow.
 
 **Tomek**
 * Posts
+|Nazwa kolumny|Opis|
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Id | Id posta |
+| PostTypeId | Id typu posta. Rozróżniamy następujące: <ul><li>1 = Question</li><li>2 = Answer</li><li>3 = Wiki</li><li>4 = TagWikiExcerpt</li><li>5 = TagWiki</li><li>6 = ModeratorNomination</li><li>7 = WikiPlaceholder</li><li>8 PrivilegeWiki</li> |
+| AcceptedAnswerId | Id zaakceptowanej odpowiedzi (z zielonym ptaszkiem). Pole obecne tylko jeżeli PostTypeId = 1. |
+| ParentId | Id pytania do którego została napisana odpowiedź. Pole obecne tylko jeżeli PostTypeId = 2. |
+| CreationDate | Data napisania posta. |
+| Score | Wynik posta, liczba którą widzimy pomiędzy strzałkami w górę i w dół. Zaczyna się od 0. Potem pozostali użytkownicy decydują jak ocenić post. |
+| ViewCount | Ilość wyświetleń posta. Pole obecne tylko jeżeli PostTypeId = 1. |
+| Body | Treść posta |
+| OwnerUserId | Id użytkownika który napisał post. Pole obecne tylko jeżeli użytkownik nie został usunięty. |
+| LastEditorUserId | Id użytkownika, który ostatni odpowiadał na post. |
+| LastEditDate | Data ostatniej edycji posta. |
+| LastActivityDate | Data ostatniej aktywności w poście |
+| Title | Tytuł posta. Pole obecne tylko jeżeli PostTypeId = 1. |
+| Tags | Tagi posta. Pole obecne tylko jeżeli PostTypeId = 1. |
+| AnswerCount | Ilość odpowiedzi do posta/odpowiedzi, czyli takich z PostTypeId = 2. Nie chodzi tutaj o komentarze. Pole obecne tylko dla PostTypeId = 1 |
+| CommentCount | Ilość komentarzy do posta. |
+| FavoriteCount | Ile użytkowników dodało post do ulubionych. Do ulubionych można dodawać tylko posty, które są PostTypeId = 1 |
 * Tags
 * Users
 
