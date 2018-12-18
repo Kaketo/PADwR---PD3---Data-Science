@@ -25,8 +25,7 @@ https://stackoverflow.com/help/badges?tab=tags
   |Name |Nazwa osiagniecia|
   |Date |Data i czas zdobycia osiagniecia|
   |Class|3- osiagniecie brazowe; 2- srebrne; 1- złote|
-  |TagBased|TagBased=“True” gdy zdobedzie sie sumarycznie Score >=“liczba” w pytaniach dotyczacych
-konkretnych tagów w non-community wiki. =“False” wpp|
+  |TagBased|TagBased=“True” gdy zdobedzie sie sumarycznie Score >=“liczba” w pytaniach dotyczacych konkretnych tagów w non-community wiki. =“False” wpp|
   
   * Comments
   
@@ -35,10 +34,8 @@ konkretnych tagów w non-community wiki. =“False” wpp|
   |Id|Po prostu Id konkretnego komentarza (wnioskuje z tego, ze jest unikalne dla kazdej pozycji)|
   |Post Id |Jest to Id konkretnego watku (wiele komentarzy moze byc w jednym watku)|
   |UserId |Id uzytkownika wstawiajacego komentarz (Brak jezeli uzytkownik został usuniety)|
-  |Score|upvote-downvote dla konkretnego komentarza (Tak wyczytałem w internecie, chociaz jest to
-dosyc dziwne, nie znalazłem zadnego Score<0)|
-  |UserDisplayName|UserDisplayName=NA oznacza, ze uzytkownik nie zmienił swojej domyslnej nazwy
-uzytkownika (czyli przypisanej sobie liczby)|
+  |Score|upvote-downvote dla konkretnego komentarza (Tak wyczytałem w internecie, chociaz jest to dosyc dziwne, nie znalazłem zadnego Score<0)|
+  |UserDisplayName|UserDisplayName=NA oznacza, ze uzytkownik nie zmienił swojej domyslnej nazwy uzytkownika (czyli przypisanej sobie liczby)|
   |CreationDate|Data i czas utworzenia komentarza|
   
   * PostHistory
