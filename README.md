@@ -25,7 +25,7 @@ https://stackoverflow.com/help/badges?tab=tags
   |Name |Nazwa osiagniecia|
   |Date |Data i czas zdobycia osiagniecia|
   |Class|3- osiagniecie brazowe; 2- srebrne; 1- złote|
-  |TagBased|$TagBased=“True”$ gdy zdobedzie sie sumarycznie $Score >=“liczba”$ w pytaniach dotyczacych
+  |TagBased|TagBased=“True” gdy zdobedzie sie sumarycznie Score >=“liczba” w pytaniach dotyczacych
 konkretnych tagów w non-community wiki. =“False” wpp|
   
   * Comments
@@ -37,7 +37,7 @@ konkretnych tagów w non-community wiki. =“False” wpp|
   |UserId |Id uzytkownika wstawiajacego komentarz (Brak jezeli uzytkownik został usuniety)|
   |Score|upvote-downvote dla konkretnego komentarza (Tak wyczytałem w internecie, chociaz jest to
 dosyc dziwne, nie znalazłem zadnego Score<0)|
-  |UserDisplayName|$UserDisplayName=NA$ oznacza, ze uzytkownik nie zmienił swojej domyslnej nazwy
+  |UserDisplayName|UserDisplayName=NA oznacza, ze uzytkownik nie zmienił swojej domyslnej nazwy
 uzytkownika (czyli przypisanej sobie liczby)|
   |CreationDate|Data i czas utworzenia komentarza|
   
