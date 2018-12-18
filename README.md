@@ -1,7 +1,7 @@
 # Opis
 Projekt w języku R mający na celu analizę danych z serwisu Stackoverflow.
 
-*Prezentacja:* https://bit.ly/2UXmqn9
+**Prezentacja:** https://bit.ly/2UXmqn9
 
 * Jak wejdziesz do pliku, wyślij mi prośbę o dostęp!
 
@@ -89,7 +89,7 @@ Tabela zawierająca informacje o wszystkich głosach i interakcjach jakie użytk
 
 **Tomek**
   * reputacja w zaleznosci od miejsca zamieszkania (wykres)
-   * TODO: podwójny barplot aby na jednym wykresie pokazać ilość userów i ich ranking
+   * **TODO:** podwójny barplot aby na jednym wykresie pokazać ilość userów i ich ranking
   * po jakim czasie pada odpowiedz ktora jest oznaczona ptaszkiem
   * jakie są najbardziej popularne posty na wybranych forach
   
