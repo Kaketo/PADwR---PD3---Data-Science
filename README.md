@@ -9,7 +9,38 @@ Projekt w języku R mający na celu analizę danych z serwisu Stackoverflow.
 ### 1. Opis tabel w każdym forum Stackoverflow
 **Marcin:**
   * Badges
+  
+Osiagniecia moga byc całkiem ciekawe poniewaz swiadcza o działalnosci na forum, np osiagniecie “Famous
+Question” oznacza, ze uzytkownik zadał pytanie, które miało co najmniej 10000 wyswietlen.
+
+materiały dodtyczace Badges: 
+
+https://stackoverflow.com/help/badges
+
+https://stackoverflow.com/help/badges?tab=tags
+  
+  | Nazwa kolumny | Opis |
+  |-|-|
+  |UserId|Id uzytkownika|
+  |Name |Nazwa osiagniecia|
+  |Date |Data i czas zdobycia osiagniecia|
+  |Class|3- osiagniecie brazowe; 2- srebrne; 1- złote|
+  |TagBased|$TagBased=“True”$ gdy zdobedzie sie sumarycznie $Score >=“liczba”$ w pytaniach dotyczacych
+konkretnych tagów w non-community wiki. =“False” wpp|
+  
   * Comments
+  
+  | Nazwa kolumny | Opis |
+  |-|-|
+  |Id|Po prostu Id konkretnego komentarza (wnioskuje z tego, ze jest unikalne dla kazdej pozycji)|
+  |Post Id |Jest to Id konkretnego watku (wiele komentarzy moze byc w jednym watku)|
+  |UserId |Id uzytkownika wstawiajacego komentarz (Brak jezeli uzytkownik został usuniety)|
+  |Score|upvote-downvote dla konkretnego komentarza (Tak wyczytałem w internecie, chociaz jest to
+dosyc dziwne, nie znalazłem zadnego Score<0)|
+  |UserDisplayName|$UserDisplayName=NA$ oznacza, ze uzytkownik nie zmienił swojej domyslnej nazwy
+uzytkownika (czyli przypisanej sobie liczby)|
+  |CreationDate|Data i czas utworzenia komentarza|
+  
   * PostHistory
   * PostLinks
 
