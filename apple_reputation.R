@@ -31,6 +31,8 @@ for(i in 1:length(df$Location)){
   }
 }
 
+#write.csv(df,"C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Users_countries.csv", sep = ",")
+
 ### Analiza ilościowa i przedstawienie na mapie iloścy userów na świecie
 df_tmp <- df[,c("Location","country","state")]
 countries_grouped <- inner_join(df_tmp,countries, by = c("country" = "country")) %>%

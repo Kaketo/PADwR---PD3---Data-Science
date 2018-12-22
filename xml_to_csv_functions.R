@@ -1,10 +1,6 @@
 setwd("C:/Users/tomas/OneDrive/Documents/Studies/PW-IAD/PADwR/zadania_domowe/03")
 library(xml2)
 library(dplyr)
-library(ggplot2)
-library(ggmap)
-library(maps)
-library(mapdata)
 
 options(stringsAsFactors=FALSE)
 
