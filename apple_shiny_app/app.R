@@ -76,16 +76,17 @@ posts5$AcceptedTimeDiff <- difftime(posts5$CommentDate,posts5$CreationDate, unit
 
 # Shiny!
 ui <- shinyUI(fluidPage(
-  titlePanel("Ilość odpowiedzi w danym kraju w podziale na miesiące"),
+  titlePanel("Stosunek ilości odpowiedzi udzielonych w danym miesiącu do ilości użytkowników w danym kraju"),
   sidebarLayout(
     sidebarPanel(
       dateRangeInput(inputId = "data",
                      label = "Wybierz przedzial dat",
-                     start  = "2009-02-10",
+                     start  = "2012-01-01",
                      end    = "2018-12-01",
-                     min    = "2009-02-10",
+                     min    = "2012-01-01",
                      max    = "2018-12-01",
                      format = "yyyy-mm-dd"),
+      br(),
       selectInput(inputId = "kraj1", 
                   label = "Wybierz jedno z państwo do porównania", 
                   choices = unique(posts5$AnswerCountry),
@@ -100,7 +101,10 @@ ui <- shinyUI(fluidPage(
                   label = "Wybierz jedno z państwo do porównania", 
                   choices = unique(posts5$AnswerCountry),
                   selected = "Switzerland"
-      )
+      ),
+      br(),
+      checkboxInput(inputId = "regresja",
+                    label = "Wyświetl regresje")
     ),
     mainPanel(
       plotOutput("answer_curve")
@@ -123,10 +127,25 @@ server <- shinyServer(function(input, output) {
     return(dt)
   })
   output$answer_curve = renderPlot({
-    ggplot(dane_react()) + 
-      geom_line(aes(x = CommentDay, y = PercentAnswer, color = AnswerCountry, group = AnswerCountry)) + 
-      theme_minimal()
+    p<- ggplot(dane_react()) + 
+        geom_line(aes(x = CommentDay, y = PercentAnswer, color = AnswerCountry, group = AnswerCountry)) + 
+        theme_minimal() +
+        labs(y = "Stosunek odpowiedzi [%]", x = "Miesiąc") +   
+        theme(legend.title = element_blank(),                       # usun tytul legendy
+              legend.text = element_text(size = 15),                # ustawienia labeli legendy
+              plot.title = element_text(hjust=0.5, size = 25),      # ustawienia tytul wykresu
+              axis.title.x = element_text(size = 15),               # ustawienia nazwy osi x
+              axis.text.x = element_text(size = 12),                # ustawienia labeli przy osi x
+              axis.text.y = element_text(size = 11))
+    
+    if(input$regresja == TRUE){
+      p + geom_smooth(data=dane_react(), formula=y~x,method=lm,aes(x = CommentDay, y = PercentAnswer, color = AnswerCountry), fill = NA)
+    }else{
+      p
+    }
+      
   })
 })
 
 shinyApp(ui, server)
+
