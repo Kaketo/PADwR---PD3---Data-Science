@@ -81,3 +81,9 @@ ggplot(df_quickness) +
   geom_bar(aes(x = reorder(AnswerCountry,Quantile75AnswerTime), y = Quantile75AnswerTime), stat = "identity") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 9))
+
+# Wykres ilości userow - druga czesc barplota
+users3 <- users2 %>% 
+  group_by(Country) %>%
+  summarise(UsersCnt = n()) %>%
+  na.omit()

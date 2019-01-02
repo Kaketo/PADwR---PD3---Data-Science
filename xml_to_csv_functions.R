@@ -74,26 +74,26 @@ votesToDF <- function(sciezka){
   return(df)
 }
 
-x <- badgesToDF("C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Badges.xml")
-write.csv(x, "C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Badges.csv")
+x <- badgesToDF("C:/Users/tomas/Downloads/BoardGames/Badges.xml")
+write.csv(x, "C:/Users/tomas/Downloads/BoardGames/Badges.csv")
 
-x <- commentsToDF("C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Comments.xml")
-write.csv(x, "C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Comments.csv")
+x <- commentsToDF("C:/Users/tomas/Downloads/BoardGames/Comments.xml")
+write.csv(x, "C:/Users/tomas/Downloads/BoardGames/Comments.csv")
 
-x <- posthistoryToDF("C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/PostHistory.xml")
-write.csv(x, "C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/PostHistory.csv")
+x <- posthistoryToDF("C:/Users/tomas/Downloads/BoardGames/PostHistory.xml")
+write.csv(x, "C:/Users/tomas/Downloads/BoardGames/PostHistory.csv")
 
-x <- postlinksToDF("C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/PostLinks.xml")
-write.csv(x, "C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/PostLinks.csv")
+x <- postlinksToDF("C:/Users/tomas/Downloads/BoardGames/PostLinks.xml")
+write.csv(x, "C:/Users/tomas/Downloads/BoardGames/PostLinks.csv")
 
-x <- postsToDF("C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Posts.xml")
-write.csv(x, "C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Posts.csv")
+x <- postsToDF("C:/Users/tomas/Downloads/BoardGames/Posts.xml")
+write.csv(x, "C:/Users/tomas/Downloads/BoardGames/Posts.csv")
 
-x <- tagsToDF("C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Tags.xml")
-write.csv(x, "C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Tags.csv")
+x <- tagsToDF("C:/Users/tomas/Downloads/BoardGames/Tags.xml")
+write.csv(x, "C:/Users/tomas/Downloads/BoardGames/Tags.csv")
 
-x <- usersToDF("C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Users.xml")
-write.csv(x, "C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Users.csv")
+x <- usersToDF("C:/Users/tomas/Downloads/BoardGames/Users.xml")
+write.csv(x, "C:/Users/tomas/Downloads/BoardGames/Users.csv")
 
-x <- votesToDF("C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Votes.xml")
-write.csv(x, "C:/Users/tomas/Downloads/Apple/apple.stackexchange.com/Votes.csv")
+x <- votesToDF("C:/Users/tomas/Downloads/BoardGames/Votes.xml")
+write.csv(x, "C:/Users/tomas/Downloads/BoardGames/Votes.csv")
