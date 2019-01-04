@@ -72,18 +72,33 @@ ggplot(df_quickness) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 9))
 # Wykres mediany czasu odpowiedzi
+area.colors <- c(rep("darkgrey",1),"darkgreen","firebrick","firebrick1",rep("darkgrey",6),"dodgerblue4","darkred",rep("darkgrey",1),"gold",rep("darkgrey",9))
 ggplot(df_quickness) + 
-  geom_bar(aes(x = reorder(AnswerCountry,MedianAnswerTime), y = MedianAnswerTime), stat = "identity") +
+  geom_bar(aes(x = reorder(AnswerCountry,MedianAnswerTime), y = MedianAnswerTime), stat = "identity", fill = area.colors) +
+  scale_y_continuous(limits = c(0,5.5),
+                     expand = c(0,0),
+                     breaks = c(0,1,2,3,4,5), 
+                     labels = c("0","1","2","3","4","5")) +
+  labs(x = "Kraj", y = "Mediana czasu odpowiedzi")+
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 9))
-# Wykres kwantyla 0.75 czasu odpowiedzi
-ggplot(df_quickness) + 
-  geom_bar(aes(x = reorder(AnswerCountry,Quantile75AnswerTime), y = Quantile75AnswerTime), stat = "identity") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 9))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 13),
+        axis.text.y = element_text(size = 13),
+        axis.title.x = element_text(size = 15),
+        axis.title.y = element_text(size = 15))
 
-# Wykres ilości userow - druga czesc barplota
-users3 <- users2 %>% 
-  group_by(Country) %>%
-  summarise(UsersCnt = n()) %>%
-  na.omit()
+# Wykres kwantyla 0.75 czasu odpowiedzi
+area.colors2 <- c(rep("darkgrey",2),"firebrick","darkgrey","darkgreen","darkred",rep("darkgrey",2),"firebrick1",rep("darkgrey",1),"dodgerblue4",rep("darkgrey",1),"gold",rep("darkgrey",10))
+ggplot(df_quickness) + 
+  geom_bar(aes(x = reorder(AnswerCountry,Quantile75AnswerTime), y = Quantile75AnswerTime), stat = "identity", fill = area.colors2) +
+  scale_y_continuous(limits = c(0,120),
+                     expand = c(0,0),
+                     breaks = c(0,20,40,60,80,100,120), 
+                     labels = c("0","20","40","60","80","100","120")) +
+  labs(x = "Kraj", y = "0.75 kwantyl czasu odpowiedzi")+
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 13),
+        axis.text.y = element_text(size = 13),
+        axis.title.x = element_text(size = 15),
+        axis.title.y = element_text(size = 15))
+
+
