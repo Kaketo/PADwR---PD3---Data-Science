@@ -3,7 +3,9 @@ Projekt w języku R mający na celu analizę danych z serwisu Stackoverflow.
 
 **Prezentacja:** https://bit.ly/2UXmqn9
 
-* Jak wejdziesz do pliku, wyślij mi prośbę o dostęp!
+* Apple 4 minuty
+* Szachy 5 minut
+* Język programowania DS 1 min
 
 # Zadania do zrobienia:
 ### 1. Opis tabel w każdym forum Stackoverflow
