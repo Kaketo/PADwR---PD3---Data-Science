@@ -74,26 +74,26 @@ votesToDF <- function(sciezka){
   return(df)
 }
 
-x <- badgesToDF("C:/Users/tomas/Downloads/BoardGames/Badges.xml")
-write.csv(x, "C:/Users/tomas/Downloads/BoardGames/Badges.csv")
+x <- badgesToDF("C:/Users/tomas/Downloads/german/Badges.xml")
+write.csv(x, "C:/Users/tomas/Downloads/german/Badges.csv")
 
-x <- commentsToDF("C:/Users/tomas/Downloads/BoardGames/Comments.xml")
-write.csv(x, "C:/Users/tomas/Downloads/BoardGames/Comments.csv")
+x <- commentsToDF("C:/Users/tomas/Downloads/german/Comments.xml")
+write.csv(x, "C:/Users/tomas/Downloads/german/Comments.csv")
 
-x <- posthistoryToDF("C:/Users/tomas/Downloads/BoardGames/PostHistory.xml")
-write.csv(x, "C:/Users/tomas/Downloads/BoardGames/PostHistory.csv")
+x <- posthistoryToDF("C:/Users/tomas/Downloads/german/PostHistory.xml")
+write.csv(x, "C:/Users/tomas/Downloads/german/PostHistory.csv")
 
-x <- postlinksToDF("C:/Users/tomas/Downloads/BoardGames/PostLinks.xml")
-write.csv(x, "C:/Users/tomas/Downloads/BoardGames/PostLinks.csv")
+x <- postlinksToDF("C:/Users/tomas/Downloads/german/PostLinks.xml")
+write.csv(x, "C:/Users/tomas/Downloads/german/PostLinks.csv")
 
-x <- postsToDF("C:/Users/tomas/Downloads/BoardGames/Posts.xml")
-write.csv(x, "C:/Users/tomas/Downloads/BoardGames/Posts.csv")
+x <- postsToDF("C:/Users/tomas/Downloads/german/Posts.xml")
+write.csv(x, "C:/Users/tomas/Downloads/german/Posts.csv")
 
-x <- tagsToDF("C:/Users/tomas/Downloads/BoardGames/Tags.xml")
-write.csv(x, "C:/Users/tomas/Downloads/BoardGames/Tags.csv")
+x <- tagsToDF("C:/Users/tomas/Downloads/german/Tags.xml")
+write.csv(x, "C:/Users/tomas/Downloads/german/Tags.csv")
 
-x <- usersToDF("C:/Users/tomas/Downloads/BoardGames/Users.xml")
-write.csv(x, "C:/Users/tomas/Downloads/BoardGames/Users.csv")
+x <- usersToDF("C:/Users/tomas/Downloads/german/Users.xml")
+write.csv(x, "C:/Users/tomas/Downloads/german/Users.csv")
 
-x <- votesToDF("C:/Users/tomas/Downloads/BoardGames/Votes.xml")
-write.csv(x, "C:/Users/tomas/Downloads/BoardGames/Votes.csv")
+x <- votesToDF("C:/Users/tomas/Downloads/german/Votes.xml")
+write.csv(x, "C:/Users/tomas/Downloads/german/Votes.csv")
